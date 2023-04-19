@@ -30,7 +30,8 @@ const LoginForm = () => {
         if (result.code === 200) {
           toast.success("Đăng nhập thành công!");
           setTimeout(() => navigate("/home"), 1000);
-        } else {   
+        } else {
+          toast.success("Đăng nhập không thành công!");
         }
       });
   };

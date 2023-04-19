@@ -6,9 +6,9 @@ import {
 import "../login.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { TextField,MenuItem } from "@material-ui/core";
-
+import Logo from "../../../asset/logo.png"
 const SignUp = () => {
   const {
     control,register,handleSubmit,formState: { errors },} = useForm<ISignUpParams>(
@@ -111,6 +111,8 @@ const SignUp = () => {
 
   return (
     <div className="login">
+       <ToastContainer />
+       <img className='logo' src={Logo} alt=''/>
       <form className="form-login" onSubmit={handleSubmit(onSubmit)}>
         <div style={{ marginTop: "32px" }}>
           <label>{t("email")}</label>
@@ -184,7 +186,7 @@ const SignUp = () => {
           {/* <label>{t("gender")}</label> */}
           <Controller
             name="gender"
-            rules={{ required: true }}
+            rules={{ required: true, validate: {} }}
             control={control}
             render={({ field }) => (
               <TextField
@@ -210,7 +212,7 @@ const SignUp = () => {
           <Controller
             name="region"
             control={control}
-            rules={{ required: true }}
+            rules={{ required: true, validate: {} }}
             render={({ field }) => (
               <TextField
                 select
