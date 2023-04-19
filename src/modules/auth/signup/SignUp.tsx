@@ -181,7 +181,7 @@ const SignUp = () => {
         </div>
 
         <div style={{ marginTop: "20px" }}>
-          <label>{t("gender")}</label>
+          {/* <label>{t("gender")}</label> */}
           <Controller
             name="gender"
             rules={{ required: true }}
@@ -206,7 +206,7 @@ const SignUp = () => {
         </div>
 
         <div style={{ marginTop: "20px" }}>
-          <label>{t("region")}</label>
+          {/* <label>{t("region")}</label> */}
           <Controller
             name="region"
             control={control}
@@ -235,7 +235,7 @@ const SignUp = () => {
           />
         </div>
         <div style={{ marginTop: "20px" }}>
-          <label>{t("state")} </label>
+          {/* <label>{t("state")} </label> */}
           <Controller
             name="state"
             control={control}
