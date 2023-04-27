@@ -67,8 +67,8 @@ const SignUp = () => {
     let error;
     if (!value) {
       error = "Vui lòng nhập mật khẩu";
-    } else if (value.trim().length < 8) {
-      error = "Mật khẩu phải có ít nhất 8 kí tự";
+    } else if (value.trim().length < 6) {
+      error = "Mật khẩu phải có ít nhất 6 kí tự";
     }
     return error;
   };
@@ -99,9 +99,9 @@ const SignUp = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+       
         if (data.code === 200) { 
-          console.log(data)   
+            
            toast.success("Sign Up success");
           setTimeout(() => navigate("/home"), 1000);
         } 

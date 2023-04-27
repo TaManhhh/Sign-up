@@ -5,7 +5,7 @@ const resources = {
   en: {
     translation: {
       "welcome": "Hello!!",
-      "email": "Email Address",
+      "email": "Email",
       "password": "Password",
       "repeatPassword": "Reconfirm password",
       "name": "Full name",
@@ -24,12 +24,13 @@ const resources = {
       "stateRequire": "State cannot be left blank",
       "login": "Login",
       'register': "Register",
+      "logout" :"Log Out"
     },
   },
   vi: {
     translation: {
         "welcome": "Xin chào",
-        "email": "Địa chỉ Email",
+        "email": "Email",
         "password": "Mật khẩu",
         "repeatPassword": "Xác nhận lại mật khẩu",
         "name": "Họ và tên",
@@ -47,7 +48,8 @@ const resources = {
         "regionRequire": "Quốc gia không được để trống",
         "stateRequire": "Thành phố không được để trống",
         "login": "Đăng nhập",
-        "register": "Đăng ký ngay"
+        "register": "Đăng ký ngay",
+        "logout" :"Đăng xuất"
     },
   },
 };

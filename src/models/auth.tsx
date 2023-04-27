@@ -1,6 +1,7 @@
 export interface LoginFormValues {
     username: string;
     password: string;
+    
 }
 
 
@@ -29,3 +30,10 @@ export interface ICity {
     id: number;
     name: string;
   }
+  export interface AuthToken {
+    accessToken: string;
+    expiresIn: number;
+    tokenType: string;
+  }
+  
+ 
