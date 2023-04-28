@@ -1,3 +1,5 @@
+import { log } from "console";
+
 const getCanvasBlob = (canvas: any): any => {
     return new Promise(function (resolve) {
       canvas.toBlob(
@@ -17,6 +19,9 @@ const getCanvasBlob = (canvas: any): any => {
     let file = null;
     const blobCanvas: Blob = await getCanvasBlob(canvas);
     file = new File([blobCanvas], 'avatar.jpeg', { type: 'image/jpeg' });
-    return file;
+    //  console.log("🚀 ~ file: upload.tsx:25 ~ generateAvatarUpload ~ file:", file)
+    return file; 
+   
   };
+   
   

@@ -5,6 +5,8 @@ import Home from './modules/Pages/Home';
 import SignUp from './modules/auth/signup/SignUp';
 import Tablee from './modules/Pages/table/Table';
 import Profile from './modules/Pages/profile/Profile';
+import Update from './modules/Pages/table/Update';
+import Delete from './modules/Pages/table/Dele';
 const Routess = () => {
   return (
     <>
@@ -15,6 +17,8 @@ const Routess = () => {
         <Route path='signup' element={<SignUp/>}/>
         <Route path='table' element={<Tablee/>}/>
         <Route path='profile' element={<Profile/>}/>
+        <Route path="/detailProduct/:index" element={<Update />} />
+          <Route path="/deleteProduct/:index" element={<Delete />} />
       </Routes>
     </>
   )
